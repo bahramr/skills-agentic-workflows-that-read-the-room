@@ -10,6 +10,7 @@ permissions:
   pull-requests: read
 
 tools:
+  bash: ["curl:*"]
   edit:
   web-fetch:
   github:
@@ -34,7 +35,7 @@ Keep Mona's GitHub information page current using authoritative public sources.
 
 1. Read `notes/mona-notes.md` for Mona's priorities, voice, and repository-specific guidance.
 2. Read the existing `site/content/github-info.md` before making changes.
-3. Use the web-fetch tool to read external public guidance from these exact URLs:
+3. Use the web-fetch tool, or `curl` if web-fetch is unavailable, to read external public guidance from these exact URLs:
    - https://github.blog/latest/
    - https://github.blog/changelog/
   - https://awesome-copilot.github.com/workflows/
